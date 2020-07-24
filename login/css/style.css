@@ -1,15 +1,15 @@
 @font-face {
   font-family: Ubuntu-Medium;
-  src: url(/projectLayoutHtmlCss/login/css/fonts/Ubuntu-Medium.ttf);
+  src: url(./css/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
   font-family: SFUIText-RegularG1;
-  src: url(/projectLayoutHtmlCss/login/css/fonts/SFUIText-RegularG1.otf);
+  src: url(./css/fonts/SFUIText-RegularG1.otf);
 }
 
 @font-face {
   font-family: SFUIText-BoldG1;
-  src: url(/projectLayoutHtmlCss/login/css/fonts/SFUIText-BoldG1.ttf);
+  src: url(./css/fonts/SFUIText-BoldG1.ttf);
 }
 
 * {

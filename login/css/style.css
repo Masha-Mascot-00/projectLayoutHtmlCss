@@ -20,6 +20,9 @@
 
   text-rendering: optimizeLegibility;
 }
+a{
+  text-decoration: none;
+}
 
 .container-column {
   display: flex;
@@ -116,7 +119,7 @@
   letter-spacing: 0;
   line-height: 20px;
 }
-label {
+.label-credentials {
   height: 20px;
 
   margin-bottom: 4px;
@@ -759,7 +762,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .text-book-description {
   height: auto;
 }
-label {
+.label-details {
   order: 1;
   align-self: flex-end;
   cursor: pointer;

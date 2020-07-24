@@ -1,26 +1,19 @@
-
 @media only screen and (min-width: 0) {
   .container-column {
-   /* background-color: pink;*/
     width: 100%;
-}
-.tool-bar {
-  width: 100%;
- 
-}
+  }
+  .tool-bar {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 321px) {
   .container-column {
-   /* background-color: orange;*/
-    width: 100%;     
-  }  
-canvas {
-  width: 100%;
+    width: 100%;
+  }
+  canvas {
+    width: 100%;
+  }
+  .tool-bar {
+    width: 100%;
+  }
 }
-.tool-bar {
-  width: 100%;
- 
-}
-
-}
-

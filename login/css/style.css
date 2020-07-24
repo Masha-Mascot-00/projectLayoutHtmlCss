@@ -17,22 +17,25 @@
 
   margin: 0;
   padding: 0;
- 
+
   text-rendering: optimizeLegibility;
 }
 
 .container-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
 
-  position: absolute;
+
+  /*position: relative;*/
   top: 0;
   right: 0;
 
-  height: 518px;
   width: 320px;
+  height: -webkit-fill-available;
+
+  /*background-color: red;*/
 }
 
 .icon-close {
@@ -48,10 +51,11 @@
 
 .header-container {
   display: flex;
+  align-self: center;
 
   position: absolute;
   top: 76px;
-  left: 55px;
+  /*left: 55px;*/
 
   height: 41px;
   width: 211px;
@@ -82,6 +86,7 @@
 .credentials {
   display: flex;
   flex-direction: column;
+
 
   position: absolute;
   top: 155px;
@@ -177,8 +182,9 @@ button {
 }
 
 canvas {
-  position: absolute;
-  top: 468px;
+  position: fixed;
+  bottom: 0;
+
 
   height: 100px;
   width: 320px;
@@ -191,14 +197,14 @@ canvas {
   );
 }
 
-
 .tool-bar {
   display: flex;
-  align-items: baseline;
+  align-items: baseline;  
+  justify-content: center;
 
-  position: absolute;
-  top: 518px;
-  right: 0;
+  position: fixed;
+  bottom: 0;
+
   z-index: 1;
 
   height: 50px;
@@ -215,7 +221,7 @@ canvas {
   color: rgba(38, 38, 38, 0.5);
   letter-spacing: 0;
   text-align: center;
-  line-height: 15px; 
+  line-height: 15px;
 }
 .active-tool-bar-text {
   margin: 0 0 0 0;
@@ -225,7 +231,7 @@ canvas {
   color: #0e41a7;
   letter-spacing: 0;
   text-align: center;
-  line-height: 15px; 
+  line-height: 15px;
 }
 .library {
   display: flex;

@@ -1,15 +1,15 @@
 @font-face {
   font-family: Ubuntu-Medium;
-  src: url(/css/fonts/Ubuntu-Medium.ttf);
+  src: url(/projectLayoutHtmlCss/login/css/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
   font-family: SFUIText-RegularG1;
-  src: url(/css/fonts/SFUIText-RegularG1.otf);
+  src: url(/projectLayoutHtmlCss/login/css/fonts/SFUIText-RegularG1.otf);
 }
 
 @font-face {
   font-family: SFUIText-BoldG1;
-  src: url(/css/fonts/SFUIText-BoldG1.ttf);
+  src: url(/projectLayoutHtmlCss/login/css/fonts/SFUIText-BoldG1.ttf);
 }
 
 * {
@@ -23,14 +23,13 @@
 
 .container-column {
   display: flex;
+
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;
 
   top: 0;
-  right: 0;
+  left: 0;
 
-  width: 320px;
+  width: -webkit-fill-available;
   height: -webkit-fill-available;
 }
 
@@ -61,7 +60,6 @@
   top: 21px;
   right: 20px;
 }
-
 
 .header-container {
   display: flex;
@@ -96,11 +94,17 @@
   background-color: #ffe500;
 }
 
+.container-credentials {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .credentials {
   display: flex;
   flex-direction: column;
-
 
   position: absolute;
   top: 155px;
@@ -151,6 +155,7 @@ input {
 }
 
 button {
+  align-self: center;
   position: absolute;
   top: 359px;
 
@@ -171,7 +176,7 @@ button {
 
 .forgot-password-link {
   display: flex;
-  justify-content: center;
+  align-self: center;
 
   position: absolute;
   top: 425px;
@@ -180,7 +185,7 @@ button {
 }
 .registration-link {
   display: flex;
-  justify-content: center;
+  align-self: center;
 
   position: absolute;
   top: 463px;
@@ -199,7 +204,6 @@ canvas {
   position: fixed;
   bottom: 0;
 
-
   height: 100px;
   width: 320px;
 
@@ -211,7 +215,6 @@ canvas {
   );
 }
 
-
 .tool-bar {
   display: flex;
   align-items: baseline;
@@ -219,7 +222,7 @@ canvas {
 
   position: fixed;
   bottom: 0;
-  
+
   z-index: 6;
 
   height: 50px;
@@ -248,8 +251,8 @@ canvas {
   text-align: center;
   line-height: 15px;
 }
-.active-section{
-display: flex;
+.active-section {
+  display: flex;
   flex-direction: column;
   justify-content: center;
 
@@ -258,17 +261,14 @@ display: flex;
 
   color: #0e41a7;
 }
-.section-bar{
- display: flex;
+.section-bar {
+  display: flex;
   flex-direction: column;
   justify-content: center;
 
   height: 50px;
   width: 80px;
 }
-
-
-
 
 /*categories start*/
 
@@ -290,16 +290,15 @@ display: flex;
   width: 48px;
   height: 18px;
 
-  margin-right: 2px ;
+  margin-right: 2px;
 }
 .short-color-title {
   height: 24px;
-  
+
   padding: 0 1px 0 1px;
 
   background-color: #ffe500;
 }
-
 
 .tags-container {
   display: flex;
@@ -309,17 +308,17 @@ display: flex;
   top: 60px;
   left: 15px;
   right: 30px;
+}
+.tags {
+  margin: 5px 5px 5px 5px;
+  padding: 4px 6px 4px 6px;
+
+  border-radius: 3px;
 
   font-family: SFUIText-RegularG1;
   font-size: 12px;
   color: #252525;
   letter-spacing: 0;
-}
-.tags{
-  margin: 5px 5px 5px 5px;
-  padding: 4px 6px 4px 6px;
-
-  border-radius: 3px;
 }
 #first-tags {
   background: #ffd2d2;
@@ -333,14 +332,17 @@ display: flex;
 #fourth-tags {
   background: #fff2e3;
 }
+
 .books-collection-container {
   display: flex;
   flex-direction: column;
 
   position: absolute;
   left: 20px;
+  top: 287px;
 
   width: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 #books-collection-title {
   position: relative;
@@ -353,11 +355,11 @@ display: flex;
   line-height: 35px;
 }
 .books-collection {
-
   display: flex;
   flex-direction: column;
 
   margin-right: 30px;
+  margin-bottom: 80px;
 }
 
 .box-collection {
@@ -456,3 +458,420 @@ display: flex;
 
 /*categories end*/
 
+/*book collection start*/
+.title-of-collection {
+  position: relative;
+  margin: 80px 9px 22px 20px;
+
+  width: -webkit-fill-available;
+  height: 62px;
+
+  font-family: SFUIText-BoldG1;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+
+#title-of-collection {
+  font-size: 28px;
+}
+
+.collection-description {
+  position: relative;
+  top: 0;
+  margin: 0 11px 39px 21px;
+}
+
+#text-collection-description {
+  font-family: SFUIText-RegularG1;
+  font-size: 12px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  position: relative;
+  top: 0;
+  margin-bottom: 41px;
+}
+.books-information {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+
+  width: 130px;
+  height: 238px;
+}
+
+.shading-layer-for-cover {
+  position: absolute;
+  width: 130px;
+  height: 190px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.book-covers {
+  width: 130px;
+  height: 190px;
+
+  border-radius: 5px;
+}
+
+.author-information {
+  opacity: 0.5;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 10px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 15px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.book-title {
+  width: 130px;
+  height: 29px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 10px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 15px;
+
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*book collection end*/
+
+/*details start*/
+
+.background-box {
+  position: relative;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 259px;
+  background: #d9dc3f;
+}
+.additional-layer {
+  position: relative;
+  top: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 259px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.user-book-status-container {
+  position: absolute;
+  right: 0;
+  top: 62px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  width: 79px;
+  height: 145px;
+}
+
+.user-book-status {
+  display: flex;
+  flex-direction: row;
+
+  width: 79px;
+  height: 45px;
+
+  margin-bottom: 5px;
+
+  background-color: white;
+  border-radius: 9px 0 0 9px;
+}
+.active-user-book-status {
+  display: flex;
+  flex-direction: row;
+
+  width: 79px;
+  height: 45px;
+
+  margin-bottom: 5px;
+
+  background-color: #0e41a7;
+  border-radius: 9px 0 0 9px;
+}
+
+.icons-of-status {
+  align-self: center;
+
+  position: absolute;
+  right: 54px;
+}
+
+.text-status {
+  align-self: center;
+
+  position: relative;
+  left: 32px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 9px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 10px;
+}
+.active-text-status {
+  align-self: center;
+
+  position: relative;
+  left: 32px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 9px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 10px;
+}
+
+.book-information {
+  position: relative;
+  top: -197px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+
+  margin-left: 20px;
+}
+
+.cover-box {
+  width: 214px;
+  height: 312px;
+
+  margin-left: -6px;
+
+  background-color: rgba(0, 0, 0);
+  border-radius: 1px 4px 4px 1px;
+}
+.book-cover {
+  width: 214px;
+  height: 312px;
+
+  opacity: 0.85;
+
+  box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.13), 8px 8px 9px 0 rgba(0, 0, 0, 0.04),
+    0 12px 20px 0 rgba(218, 221, 63, 0.44),
+    inset -1px 1px 0 0 rgba(255, 255, 255, 0.14);
+  border-radius: 1px 4px 4px 1px;
+}
+
+.title-of-book {
+  margin: 24px 20px 6px 0;
+
+  width: -webkit-fill-available;
+  height: 78px;
+}
+
+#title-of-book {
+  font-size: 24px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 24px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.book-author {
+  opacity: 0.5;
+  font-family: SFUIText-RegularG1;
+  font-size: 10px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.rate-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 12px 0 20px 0;
+  width: 143px;
+}
+.star-box {
+  flex-wrap: nowrap;
+  width: 91px;
+}
+.icon-star-full {
+  width: 15px;
+  height: 15px;
+}
+.icon-star-empty {
+  width: 15px;
+  height: 15px;
+}
+.average-rate {
+  margin-left: 6px;
+
+  font-family: SFUIText-BoldG1;
+  font-size: 12px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.count-of-users-responds {
+  font-family: SFUIText-RegularG1;
+  font-size: 12px;
+  color: #929292;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.book-description {
+  display: flex;
+}
+
+.text-book-description {
+  order: 0;
+  height: 122px;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 12px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + .text-book-description {
+  height: auto;
+}
+label {
+  order: 1;
+  align-self: flex-end;
+  cursor: pointer;
+  font-family: SFUIText-RegularG1;
+  font-size: 12px;
+  color: #0e41a7;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.details-tags-container {
+  position: relative;
+  left: -5px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 80px;
+}
+
+/*details end*/
+
+
+/*done start*/
+  
+.title-of-period {
+  position: relative;
+  top: 80px;
+  margin-left: 21px;
+
+  width: 290px;
+  height: 31px;
+}
+.number-of-books-read {
+  position: absolute;
+  top: 0;
+  left: 84px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 12px;
+  color: #929292;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+h1 {
+  font-family: SFUIText-BoldG1;
+  font-size: 28px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  position: relative;
+  top: 80px;
+
+  margin: 0 0 35px 20px;
+}
+.books-information {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 20px 25px 0;
+
+  width: 130px;
+  height: 238px;
+}
+
+.shading-layer-for-cover{
+  position: absolute;
+  width: 130px;
+  height: 190px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 5px;
+}
+.book-covers {
+  width: 130px;
+  height: 190px;
+  
+  border-radius: 5px;
+}
+
+.author-information {  
+  opacity: 0.5;
+  font-family: SFUIText-RegularG1;
+  font-size: 10px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 15px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.book-title {
+  width: 130px;
+  height: 29px;
+
+  font-family: SFUIText-RegularG1;
+  font-size: 10px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 15px;
+
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/*done end*/

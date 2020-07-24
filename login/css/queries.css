@@ -2,9 +2,22 @@
   .container-column {
     width: 100%;
   }
+  canvas {
+    width: 100%;
+  }
   .tool-bar {
     width: 100%;
   }
+
+  /*categories start*/  
+  .filter-for-images {
+    width: 100%;
+  }
+
+  .box-collection {
+    width: 100%;
+  }
+  /*categories end*/
 }
 @media only screen and (min-width: 321px) {
   .container-column {
@@ -16,4 +29,14 @@
   .tool-bar {
     width: 100%;
   }
+
+  /*categories start*/  
+  .filter-for-images {
+    width: 100%;
+  }
+
+  .box-collection {
+    width: 100%;
+  }
+  /*categories end*/
 }

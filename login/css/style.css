@@ -818,8 +818,7 @@ h1 {
 .books-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-
+  justify-content: center;
   position: relative;
   top: 80px;
 
